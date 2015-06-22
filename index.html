@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/my_css.css" type="text/css" media="screen" />
+<head>
+        <meta charset="UTF-8" />
+        <title>Assignment 2 - Home Page </title>
+</head>
+<body>
+
+        <div id="topmenu">
+			<ul id="menu">
+               <li><a href="index.html" class="active">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="resume.html">Resume</a></li>
+			   <li><a href="https://scs.senecac.on.ca/">Courses</a></li>
+               <li><a href="#">PictureGallery▼</a>
+					<ul>
+						<li><a href="gallery.html">Galleries</a></li>
+						<li><a href="grid_gallery.html">Grid Gallery</a></li>
+					</ul>
+			   </li>
+               <li><a href="honesty.html">Honesty</a></li>
+               <li><a href="#">Link ▼</a>
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+				</ul>
+				</li>
+			</ul ="menu">
+        </div>
+	
+	<div class="header">
+	<section class="headersection">
+		<h2>Hyungi Henry Kim's Blog</h2>
+	</section>
+	</div>
+	<div class="container">
+	<div class="inner_container">
+		<div class="Profile">
+			<h3>Profile</h3>
+			<br />
+				<img height ="130px" width="100%" src="images/img_me.png" alt="Hyungi"/>
+			<br />
+			<h5>Location:</h5>
+				<nav class="profile_info">
+				<ul>
+					<p>Toronto, Ontario<br>Canada, Earth<br>Solar System,<br>Milky Way Galaxy</p>
+				</ul>
+				</nav>
+			<h5>Contact me:</h5>
+				<nav class="profile_info">
+				<ul>
+					<li class="li_none"><a href="mailto:ex.hyungi93@gmail.com">Email </a></li>
+				</ul>
+				</nav>
+			<h5>Other Links:</h5>
+				<nav class="profile_info">
+				<ul>
+					<li class="li_none"><a href="http://midmia.tistory.com/">Other Blog</a></li>
+					<li class="li_none"><a href="https://www.facebook.com/hyungi.kim.3726">My Facebook</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="Content">
+		<section id="HTML_TUT1">
+			<article>
+			<header>
+			<a href="http://www.html5rocks.com/en/tutorials/webcomponents/imports/"><h3>HTML Tutorial -1</h3><br /></a>
+			</header>
+			<div>
+			<p>HTML Imports, part of the Web Components cast, is a way to include HTML documents in other HTML documents. You're not limited to markup either. 
+			An import can also include CSS, JavaScript, or anything else an .html file can contain. In other words, this makes imports a fantastic tool for loading related 
+			HTML/CSS/JS.</p>
+			<p>
+				The URL of an import is called an import location. To load content from another domain, the import location needs to be CORS-enabled:
+			</p>
+			<p>
+				The browser's network stack automatically de-dupes all requests from the same URL. This means that imports that reference the same URL are only retrieved once.
+				No matter how many times an import at the same location is loaded, it only executes once.
+			</p>
+			<p>
+				Browser support is still in the early days. Chrome 31 is the first browser to have an implementation. You can enable the flag by turning on Enable HTML 
+				Imports in about:flags. For other browsers, Polymer's polyfill works great until things are widely supported.
+			</p>
+			<p>
+				Imports provide convention for bundling HTML/CSS/JS (even other HTML Imports) into a single deliverable. It's an intrinsic feature, but a powerful one. 
+				If you're creating a theme, library, or just want to segment your app into logical chunks, giving users a single URL is compelling. 
+				Heck, you could even deliver an entire app via an import. Think about that for a second.
+			</p>
+			</div>
+			<footer>
+				<p><b>Published on November 24, 2013</b></p>
+				<p><b>Tags: <i>HTML, CSS, Tutorial, Basic, Tag</i></b></p>
+			</footer>
+			</article>
+		</section>
+		<hr />
+		<section id="HTML5_wiki">
+			<article>
+			<header>
+				<a href="http://en.wikipedia.org/wiki/HTML5"><h3>About HTML</h3><br /></a>
+			</header>
+			<div>
+				<p>HTML5 is a markup language used for structuring and presenting content for the World Wide Web and a core technology of the Internet.
+				It is the fifth revision of the HTML standard (created in 1990 and standardized as HTML 4 as of 1997) and, as of December 2012, 
+				is a candidate recommendation of the World Wide Web Consortium (W3C).Its core aims have been to improve the language with support for the latest
+				multimedia while keeping it easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.).
+				HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.</p>
+				<p>Following its immediate predecessors HTML 4.01 and XHTML 1.1, HTML5 is a response to the fact that the HTML and XHTML in common use on the World Wide Web 
+				are a mixture of features introduced by various specifications, along with those introduced by software products such as web browsers, those established by 
+				common practice, and the many syntax errors in existing web documents</p>
+				<p> It is also an attempt to define a single markup language that can be written in either HTML or XHTML syntax. It includes detailed processing models to encourage more 
+				interoperable implementations; it extends, improves and rationalises the markup available for documents, and introduces markup and application programming interfaces (APIs
+				) for complex web applications.</p>
+			</div>
+			<footer>
+				<p><b>Published on November 24, 2013</b></p>
+				<p><b>Tags: <i>HTML, Wiki, intro, Tag</i></b></p>
+			</footer>
+            </article>
+			</section>
+		<hr />
+		<section id="css_wiki">
+			<article>
+			<header>
+				<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets"><h3>CSS Wikipedia</h3><br /></a>
+			</header>
+			<div>
+				<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation semantics (the look and formatting) 
+				of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language
+				can also be applied to any kind of XML document, including plain XML, SVG and XUL.</p>
+				<p>CSS is designed primarily to enable the separation of document content (written in HTML or a similar markup language) from document presentation, including elements such as the layout, colors, and fonts.
+				This separation can improve content accessibility
+				provide more flexibility and control in the specification of presentation characteristics, enable multiple pages to share formatting, and reduce complexity and repetition in the structural content
+				(such as by allowing for tableless web design). 
+				CSS can also allow the same markup page to be presented in different styles for different </p>
+			</div>
+			<footer>
+				<p><b>Published on November 24, 2013</b></p>
+				<p><b>Tags: <i> CSS, Wiki, Tag</i></b></p>
+			</footer>
+            </article>
+			</section>
+			<hr />
+		<section id="history_of_css">
+		<article>
+		<header>
+				<a href="http://newsletter.blizzardinternet.com/the-history-future-of-css/2008/04/11/"><h3>The History & Future of CSS</h3><br /></a>
+		</header>
+		<div>
+				CSS, Cascading Style Sheets, have reinvented the way website designers not only create the look and feel of a website,
+				but also how they keep that look consistent throughout the entire website.
+				Whether it’s a one page or 100 page website, CSS makes updating each page much simpler. With Cascading Style Sheets,
+				a designer has one area or file he/she uses to add pictures, change the font or color of the text, change the background color or
+				image and update the entire look of a website.
+		</div>
+		<footer>
+				<p><b>Published on November 24, 2013</b></p>
+				<p><b>Tags: <i>CSS, History, Tag</i></b></p>
+		</footer>
+        </article>
+		</section>
+		<hr />
+	</div>
+</div>
+		<div class= "list_post">
+			<section class ="sectionside">
+				<header>
+					<h3 class="p_center">Recent Post</h3>
+				</header>
+				<ul>
+					<li class="li_none"><a href="#HTML5_TUT1">HTML5 Tutorial -1</a></li>
+					<li class="li_none"><a href="#HTML5_wiki">About Html</a></li>
+					<li class="li_none"><a href="#css_wiki">CSS Wikipedia</a></li>
+					<li class="li_none"><a href="#history_of_css">History of CSS</a></li>
+				</ul>
+			</section>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer class="footer">
+		<img  src="images/ICT_Logo.png" alt="logo" align="left"/>
+		Created By: Hyungi Henry Kim, Nov 24 2013 , INT222 Assignment 2
+	</footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<html>
+<link rel="stylesheet" href="css/my_css.css" type="text/css" media="screen" />
+<head>
+        <meta charset="UTF-8" />
+        <title>Assignment 2 - Grid Gallery </title>
+</head>
+<body>
+
+        <div id="topmenu">
+			<ul id="menu">
+               <li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="resume.html">Resume</a></li>
+			   <li><a href="https://scs.senecac.on.ca/">Courses</a></li>
+               <li><a href="#" class="active">PictureGallery▼</a>
+					<ul>
+						<li><a href="gallery.html" >Galleries</a></li>
+						<li><a href="grid_gallery.html"class="active">Grid Gallery</a></li>
+					</ul>
+			   </li>
+               <li><a href="honesty.html">Honesty</a></li>
+               <li><a href="javascript:;" onClick="javascript:window.open('images/img2.jpg', 'Image2','width=730,height=760, left=400, top=100')">Link ▼</a>
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+				</ul>
+				</li>
+			</ul ="menu">
+        </div>
+	
+	<div class="header">
+	<section class="headersection">
+		<h2>Grid Gallery</h2>
+	</section>
+	</div>
+	<div id=container>
+	<div class= "imageGrid">
+		<figure>
+			<img src="images/book1.jpg" alt='' onclick='imageView("images/book1.jpg");'/></a>
+			<figcaption>books i own -1</figcaption>
+		</figure>
+		<figure>
+			<img src="images/book2.jpg" alt='' onclick='imageView("images/book2.jpg");'/></a>
+			<figcaption>books i own -2</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/book5.jpg" alt='' onclick='imageView("images/book5.jpg");'/></a>
+			<figcaption>books i own -3</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/place1.jpg" alt='' onclick='imageView("images/place1.jpg");'/></a>
+			<figcaption>place i went -1</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/place5.jpg" alt='' onclick='imageView("images/place5.jpg");'/></a>
+			<figcaption>place i went -2</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/place3.jpg" alt='' onclick='imageView("images/place3.jpg");'/></a>
+			<figcaption>place i went -3</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/food1.jpg" alt='' onclick='imageView("images/food1.jpg");'/></a>
+			<figcaption>images of food -1</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/food2.jpg" alt='' onclick='imageView("images/food2.jpg");'/></a>
+			<figcaption>images of food -2</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/food5.jpg" alt='' onclick='imageView("images/food5.jpg");'/></a>
+			<figcaption>images of food -3</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/food3.jpg" alt='' onclick='imageView("images/food3.jpg");'/></a>
+			<figcaption>images of food -4</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/me1.jpg" alt='' onclick='imageView("images/me1.jpg");'/></a>
+			<figcaption>images of me -1</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/me2.jpg" alt='' onclick='imageView("images/me2.jpg");'/></a>
+			<figcaption>images of me -2</figcaption>
+		</figure>
+		<figure>
+			<img  src="images/me3.jpg" alt='' onclick='imageView("images/me3.jpg");'/></a>
+			<figcaption>images of me -3</figcaption>
+		</figure>
+		
+		<figure>
+			<img  src="images/me5.jpg" alt='' onclick='imageView("images/me5.jpg");'/></a>
+			<figcaption>images of me -4</figcaption>
+		</figure>
+		
+	</div>
+	</div>
+	
+	<div id=popup>
+        <img id=popupImage src='images/img.jpg' alt='Image Load Error' class=image>
+        <div class=close onclick='imageClose();'>&nbsp;X&nbsp;</div>
+    </div>
+
+    <div id=popupbg>S</div>
+	<script>
+
+        function imageView(bigImage) {
+            document.querySelector('#popupImage').setAttribute('src', bigImage);
+            document.querySelector('#popup').style.display = 'block';
+            document.querySelector('#popupbg').style.visibility = 'visible';
+        }
+
+        function imageClose() {
+            document.querySelector('#popup').style.display = 'none';
+            document.querySelector('#popupbg').style.visibility = 'hidden';
+        }
+
+    </script>
+	<div class="footer">
+		<img  src="images/ICT_Logo.png" alt="logo"/>
+		Created By: Hyungi Henry Kim, Nov 24 2013 , INT222 Assignment 2
+	</div>
+</body>
+
+<html>

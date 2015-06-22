@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="css/my_css.css" type="text/css" media="screen" />
+<head>
+        <meta charset="UTF-8" />
+        <title>Assignment 2 - Gallery </title>
+</head>
+<body>
+
+        <div id="topmenu">
+			<ul id="menu">
+               <li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="resume.html">Resume</a></li>
+			   <li><a href="https://scs.senecac.on.ca/">Courses</a></li>
+               <li><a href="#" class="active">PictureGallery▼</a>
+					<ul>
+						<li><a href="gallery.html" class="active">Galleries</a></li>
+						<li><a href="grid_gallery.html">Grid Gallery</a></li>
+					</ul>
+			   </li>
+               <li><a href="honesty.html">Honesty</a></li>
+               <li><a href="#">Link ▼</a>
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+				</ul>
+				</li>
+			</ul ="menu">
+        </div>
+<div class="Container">
+	<div class="header">
+	<section class="headersection">
+		<h2>Gallery</h2>
+	</section>
+	</div>
+	<aside id="gallery_side">
+	 <div class="sidebar">
+		 <input type="image" src="images/me1.jpg" name="Photo_me" onclick="show_gallery(0);"/>
+		 <div class="desc">Photo of me</div>
+		</div>
+		
+		<div class="sidebar">
+		 <input type="image" src="images/place1.jpg" name="place" onclick="show_gallery(1);"/>
+		 <div class="desc">Place</div>
+		</div>
+		<div class="sidebar">
+		 <input type="image" src="images/food1.jpg" name="food" onclick="show_gallery(2);"/>
+		 <div class="desc">Foods</div>
+		</div>
+		<div class="sidebar">
+		 <input type="image" src="images/book1.jpg" name="book" onclick="show_gallery(3);"/>
+		 <div class="desc">Books</div>
+		</div>
+      </aside>
+		<div class="gallery_main">
+			<div id="gallery"> </div>
+		</div>
+		<div class="clear"></div>
+		<footer class="footer">
+		<img src="images/ICT_Logo.png" alt="logo" align="left"/>
+		Created By: Hyungi Henry Kim, Nov 24 2013 , INT222 Assignment 2
+		</footer>
+</div>
+	<script>
+		function show_gallery(number)
+		{
+					var galleries = [{"title": "My photo", "desc": "photo about me", 
+					images:["me1.jpg", "me2.jpg", "me3.jpg", "me4.jpg", "me5.jpg", "me6.jpg", "me7.jpg", "me8.jpg"]}, 
+				   {"title": "Place", "desc": "Place i went", 
+					images:["place1.jpg", "place2.jpg", "place3.jpg", "place4.jpg", "place5.jpg"]}, 
+				   {"title": "Food", "desc": "photos of food", 
+					images:["food1.jpg", "food2.jpg", "food3.jpg", "food4.jpg", "food5.jpg", "food6.jpg", 
+					"images/food8.jpg"]}, 
+				   {"title": "books", "desc": "books i own", 
+					images:["book1.jpg", "book2.jpg", "book3.jpg", "book4.jpg", "book5.jpg", "book6.jpg", "book7.jpg", 
+					"book8.jpg", "book9.jpg"]}];
+
+					var gallery = document.getElementById("gallery");
+
+					gallery.innerHTML = "<h3>" + galleries[number].title + "</h3>";
+					gallery.innerHTML += "<p>" + galleries[number].desc + "</p><hr />";
+					gallery.innerHTML += "<div class='imageGrid' >";
+
+  
+					for (var i = 0; i < galleries[number].images.length; i++) {
+	
+					gallery.innerHTML += "<img src='images/" + galleries[number].images[i] + "' alt='' >";
+
+					}					
+
+					gallery.innerHTML += "</div>";
+		}
+
+		window.onload = show_gallery(0);
+	</script>
+</body>
+<html>
